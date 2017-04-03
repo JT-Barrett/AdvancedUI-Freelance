@@ -1,1 +1,40 @@
+/* css properties for elements specific to this applicaion */
 
+html, body {
+	height: 100%;
+	background-color: #fcfcf7;
+}
+
+h1, h2, h3, h5 {
+  display: inline-block;
+  border-bottom: 2px solid #d8dde8;
+	color: #404041;
+	margin: 0;
+}
+
+.btn-circle {
+  width: 200px;
+  height: 200px;
+
+  background-color: #ff884d !important;
+  background-image: linear-gradient(to bottom,#ffaa80 0,#ff884d 100%) !important;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.42;
+  border-radius: 100px  ;
+}
+
+.btn-circle:active {
+  background-color: #ff7733 !important;
+  background-image: linear-gradient(to bottom,#ffaa80 0,#ff7733 100%) !important;
+}
+
+.home-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 600px;
+}
