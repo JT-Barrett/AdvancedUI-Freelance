@@ -15,6 +15,10 @@
   padding: 10px 0 0 0;
 }
 
+.padding-10 {
+	padding: 10px;
+}
+
 /*************\f
 | Margin
 \*************/
@@ -22,8 +26,28 @@
   margin-top: 20px;
 }
 
+.margin-top-10{
+  margin-top: 20px;
+}
+
 .no-margin {
 	margin: 0 !important;
+}
+
+.margin-auto {
+	margin: auto;
+}
+
+/*************\
+| Width
+\*************/
+
+.full-width{
+	width: 100%;
+}
+
+.half-width{
+	width: 50% !important;
 }
 
 /*************\
@@ -87,11 +111,19 @@
 .text-align-center {
 	text-align: center;
 }
+.text-align-left {
+	text-align: center;
+}
 
 .absolute-center {
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.block-center {
+	display: inline-block;
+	margin: auto;
 }
 
 .noselect {
@@ -117,4 +149,14 @@
 
 .opacity-half{
 	opacity: 0.5;
+}
+
+.outline-none{
+
+}
+
+.background-check{
+	background-color: #dddddd;
+	outline: 2px dotted #aaaaaa;
+	height: 100%;
 }

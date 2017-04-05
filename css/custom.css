@@ -7,9 +7,18 @@ html, body {
 
 h1, h2, h3, h5 {
   display: inline-block;
-  border-bottom: 2px solid #d8dde8;
 	color: #404041;
 	margin: 0;
+}
+
+.btn-circle span{
+	z-index: 100;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 30px;
+	width: 75%;
+	white-space:pre-line;
+	margin: auto;
 }
 
 .btn-circle {
@@ -22,7 +31,12 @@ h1, h2, h3, h5 {
   padding: 6px 0;
   font-size: 12px;
   line-height: 1.42;
-  border-radius: 100px  ;
+  border-radius: 100px;
+	display: inline-block;
+}
+
+.btn-circle:focus,.btn-circle:active {
+   outline: none !important;
 }
 
 .btn-circle:active {
@@ -37,4 +51,113 @@ h1, h2, h3, h5 {
   transform: translate(-50%, -50%);
   width: 800px;
   height: 600px;
+}
+
+#master-container {
+	width: 100%;
+	height: 100%;
+	padding: 40px;
+}
+
+.home-container.form-container-small {
+	border-radius: 10px;
+	background-color: #ffffff;
+	border: 3px solid #d9d9d0;
+}
+
+.form-container-large {
+	border-radius: 10px;
+	background-color: #ffffff;
+	border: 3px solid #d9d9d0;
+	width: 100%;
+	height: 100%;
+}
+
+.content-center {
+        width: 200px;
+        height: 600px;
+
+        position:absolute; /*it can be fixed too*/
+        left:0; right:0;
+        top:0; bottom:0;
+        margin:auto;
+
+        /*this to solve "the content will not be cut when the window is smaller than the content": */
+        max-width:100%;
+        max-height:100%;
+        overflow:auto;
+}
+
+.confirmation-container {
+	width: 75%;
+	height: 35%;
+	text-align: center;
+	padding: 30px;
+}
+
+.btn:focus,.button:active{
+	outline: none !important;
+}
+
+.room-select{
+	background-color: #eff3f7;
+	border: 1px solid #3b4554;
+	border-radius: 3px;
+	height: 40px;
+	line-height: 28px;
+	padding: 5px;
+	margin-bottom: 7px;
+	vertical-align: middle;
+	transition: all 0.1s ease;
+	cursor: pointer;
+}
+
+.room-select:hover:not(.room-select-selected){
+	background-color: #fcfcfd;
+}
+
+.floorplan-backgorund {
+	background-color: #dddddd;
+	width: 100%;
+	height: 600px;
+}
+
+.room-select-button-container{
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	display: block;
+	margin: auto;
+	padding: 5px;
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+}
+
+.room-select-button {
+	color: #ffffff;
+	background-color: #d8dde8;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 10px;
+	cursor: default;
+}
+
+.room-select-button.ready {
+	color: #ffffff;
+	background-color: #ff884d;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.room-select-button.ready:hover {
+	color: #dddddd;
+	background-color: #fa8249;
 }
