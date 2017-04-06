@@ -115,10 +115,22 @@
 	text-align: center;
 }
 
+.inline-block-center {
+	float:none;
+	display:inline-block;
+	vertical-align:middle;
+}
+
 .absolute-center {
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.flex-center {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 .block-center {
