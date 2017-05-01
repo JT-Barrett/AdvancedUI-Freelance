@@ -73,6 +73,10 @@
 	height: 34%;
 }
 
+.height-inherit {
+	height: inherit;
+}
+
 /*************\
 | Positioning & Display
 \*************/
