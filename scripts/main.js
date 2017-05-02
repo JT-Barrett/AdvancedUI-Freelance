@@ -19,7 +19,6 @@ $(document).ready(function(){
   $(".form-control").on('input change', function(){
     var complete = true;
     $(".form-control").each(function(){
-      console.log("Val:" + $(this).val());
       if ($(this).val() == "" || typeof $(this).val() == undefined){
         complete = false;
         $(".room-select-button").removeClass("ready");
@@ -36,6 +35,27 @@ $(document).ready(function(){
       $(this).shake();
     } else {
       window.location.href = $(this).attr('href');
+    }
+  });
+
+  $(".room-select-button").click(function (e) {
+    if(!$(this).hasClass("ready")){
+      e.preventDefault();
+      $(this).shake();
+    } else {
+      window.location.href = $(this).attr('href');
+    }
+  });
+
+  $("#hotel-select").on('change', function(){
+    var selected = $("#hotel-select option:selected").val();
+    if (selected == ""){
+      $(".preview-selected").removeClass("preview-selected");
+      $(".preview").first().addClass("preview-selected");
+    } else {
+      $(".preview-selected").removeClass("preview-selected");
+      selected = selected.replace(/ /g,'')
+      $("#" + selected).addClass("preview-selected");
     }
   });
 
