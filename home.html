@@ -11,17 +11,19 @@
 </head>
 <body>
   <!-- Page Content -->
-  <img class="banner" src="resources/banner2.png" alt="" style="width:600px;height:62px; dispaly: block;margin:auto;">
   <div id="master-container-small">
+    <img class="banner" src="resources/banner2.png" alt="" style="width:600px;height:62px;">
     <div class="home-container form-container-small">
       <img class="help-button" src="resources/help.png" alt="">
-      <img class="back-button" src="resources/back.png" alt="">
+      <img class="back-button" src="resources/back.png" alt="" onclick="window.location.href='index.html'">
       <div class="help-box hidden">
         <h4>Help on This Page</h4>
-        <p>Place page instructions here.</p>
+        <p>If you have a reservation, click Reservation Check-In to enter your confirmation number.</p>
+        <p>If you have not yet payed for your stay here, please select Walk-In to select an availible room.</p>
+        <p>If you are checking out, select Check-Out to select your room and enter the Receipt Number you were given.</p>
       </div>
         <div class="row half-height">
-        <div class="col-xs-12 text-center full-height">
+        <div class="col-xs-12 text-center no-padding">
           <button class="btn btn-default btn-circle btn-no-outline" onclick="window.location.href='vacancies.html'"><span>Walk-In</span></button>
         </div>
       </div>

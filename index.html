@@ -12,25 +12,28 @@
 <body>
   <!-- Page Content -->
 
-    <img class="banner" src="resources/banner.png" alt="" style="width:600px;height:62px; dispaly: block;margin:auto;">
     <div id="master-container-small">
+    <img class="banner" src="resources/banner.png" alt="" style="width:600px;height:62px;">
     <div class="home-container form-container-small">
       <img class="help-button" src="resources/help.png" alt="">
-      <img class="back-button" src="resources/back.png" alt="">
       <div class="help-box hidden">
         <h4>Help on This Page</h4>
         <p>Select a hotel from the dropdown and click select this hotel to move to it's homepage.</p>
       </div>
       <div class="col-xs-12 container-inner no-padding">
-        <h2 class="text-align-center margin-top-10">Hotel California</h2>
-        <img src="resources/sample_preview.jpg" alt="" style="width:500px;height: 375px;display:block;margin:auto;">
+        <div class="preview preview-empty preview-selected">
+          <h2 class="text-align-center margin-top-10">Select a Hotel</h2>
+          <img src="resources/preview_empty.png" alt="" style="width:500px;height: 375px;display:block;margin:auto;">
+        </div>
+        <div id="HotelCalifornia" class="preview">
+          <h2 class="text-align-center margin-top-10">Hotel California</h2>
+          <img src="resources/sample_preview.jpg" alt="" style="width:500px;height: 375px;display:block;margin:auto;">
+        </div>
         <div class="room-select-content margin-top-20">
           <h4>Search Hotels</h4>
-          <select class="form-control half-width" id="sel1">
+          <select class="form-control half-width" id="hotel-select">
             <option value=""></option>
             <option value="Hotel California">Hotel California</option>
-            <option value="Hotel Monte Vista">Hotel Monte Vista</option>
-            <option value="Michael's Motel">Michael's Motel</option>
           </select>
         </div>
         <div class="room-select-button-container">

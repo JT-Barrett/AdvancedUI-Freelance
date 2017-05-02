@@ -11,20 +11,24 @@
 </head>
 <body>
   <!-- Page Content -->
-  <img class="banner" src="resources/banner2.png" alt="" style="width:600px;height:62px; dispaly: block;margin:auto;">
   <div id="master-container-small">
+    <img class="banner" src="resources/banner2.png" alt="" style="width:600px;height:62px;">
     <div class="home-container home-container form-container-small">
       <img class="help-button" src="resources/help.png" alt="">
+      <img class="back-button" src="resources/back.png" alt="" onclick="window.location.href='home.html'">
       <div class="help-box hidden">
         <h4>Help on This Page</h4>
-        <p>Place page instructions here.</p>
+        <p>If you do not have a confirmation number for a reservation, please go back and select Walk-In.</p>
       </div>
       <div class="col-xs-12 container-inner no-padding">
         <div class="content-center confirmation-container">
           <h3>Confirmation Number</h3>
           <input type="text" name="" value="" class="form-control margin-top-20">
-          <button type="button" name="button" class="btn btn-default margin-top-20 outline-none" onclick="window.location.href='index.html'"><h5>Back</h5></button>
-          <button type="button" name="button" class="btn btn-default margin-top-20 outline-none" onclick="window.location.href='contact.html'"><h5>Check-In</h5></button>
+        </div>
+        <div class="room-select-button-container">
+          <div class="room-select-button noselect" href="contact.html">
+            Check-In
+          </div>
         </div>
       </div>
     </div>
