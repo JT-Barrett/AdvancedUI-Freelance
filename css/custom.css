@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5 {
 .help-button {
 	z-index: 50;
 	position: absolute;
-	top: 5px;
+	top: 68px;
 	right: 5px;
 	height: 22px;
 	width: 22px;
@@ -185,14 +185,15 @@ h1, h2, h3, h4, h5 {
 .back-button {
 	z-index: 50;
 	position: absolute;
-	top: 5px;
+	top: 68px;
 	left: 5px;
 	height: 22px;
 	width: 22px;
 }
 
 .help-button-vacancies {
-	margin: 46px 46px 0 0;
+	top: 0px;
+	margin-right: -5px;
 }
 
 .help-box {
@@ -204,10 +205,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .banner {
-	display: block;
-	margin: auto;
-	position: relative;
-	top: 70px;
 	z-index: 100;
 }
 
@@ -247,4 +244,12 @@ input.form-control, select.form-control {
 	margin: 0 auto;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.preview {
+	display: none;
+}
+
+.preview-selected {
+	display: inline;
 }
